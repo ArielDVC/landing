@@ -1,0 +1,9 @@
+.customer-problem img{
+    width        : 100%;
+    border-radius: 15px;
+    box-shadow   : 5px 5px 10px rgb(0, 0, 0);
+}
+.customer-problem p{
+    color        : #333;
+    text-align   : justify;
+}

@@ -1,0 +1,15 @@
+.action{
+    text-align: center;
+}
+.action a{
+    display        : inline-block;
+    padding        : 10px 20px;
+    color          : #fff;
+    background     : linear-gradient(to right,#831843,#be185d);
+    border         : none;
+    border-radius  : 5px;
+    text-decoration: none;
+    font-weight    : bold;
+    margin-top     : 10px;
+    width          : 275px;
+}

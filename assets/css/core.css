@@ -1,0 +1,137 @@
+*{
+    margin  : 0;
+    padding : 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family     : Arial, Helvetica, sans-serif;
+    list-style      : none;
+    text-decoration : none;
+    scroll-behavior : smooth; /* Suavizar Scroll */
+}
+.container{
+    width  : 100%;
+    margin : auto;
+    padding: 10px;
+}
+.grid{
+    display : grid;
+    grid-gap: 16px;
+}
+.grid-2{
+    grid-template-columns: 1fr;
+}
+.grid-3{
+    grid-template-columns: 1fr;
+}
+.grid-4{
+    grid-template-columns: repeat(2,1fr);
+}
+.animated-section{
+    /* opacity   : 0;
+    transform : translateY(20px); */
+    transition: opacity 1s, transform 1s;
+}
+.animated-section.animate{
+    opacity  : 1;
+    transform: translateY(0);
+}
+.margin-bottom{
+    margin-bottom: 64px;
+}
+.text-center{
+    text-align: center;
+}
+h1{
+    font-size     : 48px;
+    line-height   : 51px;
+    letter-spacing: 3px;
+    margin-top    : 24px;
+    margin-bottom : 20px;
+    text-align    : center;
+}
+h2{
+    font-size     : 24px;
+    line-height   : 1.2;
+    letter-spacing: 2px;
+    margin-bottom : 16px;
+}
+p{
+    font-size  : 16px;
+    line-height: 1.5;
+}
+.accordion{
+    max-width: 600px;
+    margin   : auto;
+}
+.accordion-item{
+    border-style       : solid;
+    border-width       : 0;
+    border-bottom-width: 1px;
+    border-color       : #fff;
+}
+.accordion-heading{
+    background      : linear-gradient(to right,#831843,#be185d);;
+    color           : #fff;
+    padding         : 16px;
+    cursor          : pointer;
+    display         : flex;
+    justify-content : space-between;
+    font-size       : 20px;
+    font-weight     : 600;
+}
+.accordion-content{
+    padding: 10px;
+    display: none;
+}
+.accordion-active{
+    display: block;
+}
+/* 93.75% */
+@media (min-width: 640px){
+    .container{
+        max-width: 600px;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+    .grid-2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .grid-4{
+        grid-template-columns: repeat(4,1fr);
+    }
+    h2{
+        font-size: 28px;
+    }
+}
+@media (min-width: 1024px){
+    .container{
+        max-width: 960px;
+    }
+    .grid-3{
+        grid-template-columns: repeat(3,1fr);
+    }
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 36px;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+@media (min-width: 1280px){
+    .container{
+        max-width: 1200px;
+    }
+}
+@media (min-width: 1536px){
+    .container{
+        max-width: 1440px;
+    }
+}

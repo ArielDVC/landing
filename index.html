@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <link rel='stylesheet' href='./assets/css/style.css'>
+    <link rel='stylesheet' href='./assets/libraries/fontawesome-free-6.4.2-web/css/all.min.css'>
+</head>
+<body>
+    <!-- MENU -->
+    <div class='menu' id='menu'>
+        <nav class='container menu-body'>
+            <div class='menu-logo'>
+                <a href='#'>
+                    <img src='./assets/img/logo.png' alt='Mi Empresa' title='Mi Empresa'>
+                </a>
+            </div>
+            <!--MINIMO-->
+            <input type='checkbox' id='check'>
+            <label for='check'>
+                <i class='fa-solid fa-bars'  id='show'></i>
+                <i class='fa-solid fa-times' id='close'></i>
+            </label>
+            <!--NORMAL-->
+            <div>
+                <ul class='menu-items'>
+                    <li>
+                        <a href='#'>Inicio</a>
+                    </li>
+                    <li>
+                        <a href='#'>Acerca de</a>
+                    </li>
+                    <li>
+                        <a href='#'>Servicios</a>
+                    </li>
+                    <li>
+                        <a href='#'>Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- BANNER -->
+    <div class='banner margin-bottom'>
+        <div class='banner-opacity'>
+            <div class='container grid grid-2'>
+                <div class='banner-detail'>
+                    <h2>Encabezado sobre la transformación que brinda tu producto</h2>
+                    <p>Párrafo pequeño para complementar la información del encabezado.</p>
+                    <a href='#'>Llamado a la acción específico</a>
+                </div>
+                <div>
+                    <video autoplay muted loop class='banner-video'><!--controls-->
+                        <source src='./assets/video/banner.mp4' type='video/mp4'>
+                        Tu navegador no admite la reproducción de videos.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SPONSORS -->
+    <div class='container grid grid-4 margin-bottom'>
+        <div class='sponsor'>
+            <a href='#'>
+                <img src='./assets/img/solucion1.png' alt='patrocinador 1' title='patrocinador 1'>
+            </a>
+        </div>
+        <div class='sponsor'>
+            <a href='#'>
+                <img src='./assets/img/solucion2.png' alt='patrocinador 2' title='patrocinador 2'>
+            </a>
+        </div>
+        <div class='sponsor'>
+            <a href='#'>
+                <img src='./assets/img/solucion3.png' alt='patrocinador 3' title='patrocinador 3'>
+            </a>
+        </div>
+        <div class='sponsor'>
+            <a href='#'>
+                <img src='./assets/img/solucion4.png' alt='patrocinador 4' title='patrocinador 4'>
+            </a>
+        </div>
+    </div>
+    <!-- CUSTOMER PROBLEM -->
+    <div class='container grid grid-2 margin-bottom customer-problem animated-section'><!-- data-animated='false' -->
+        <div>
+            <img src='./assets/img/customer-problem.jpg' alt='Imagen Problema' title='Imagen Problema'>
+        </div>
+        <div>
+            <h2>Encabezado que enfatiza algún problema que tus clientes potenciales tengan</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores aperiam beatae eius ea autem voluptatem. Optio eveniet deserunt labore maiores necessitatibus asperiores, exercitationem rerum iure nesciunt dignissimos qui pariatur libero?. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, id dolorem. Velit, perspiciatis. Suscipit aspernatur quae voluptas modi aliquid recusandae, reiciendis veniam magnam nostrum autem hic facilis quo dolor ea?</p>
+        </div>
+    </div>
+    <!-- SOLUTIONS -->
+    <div class='container margin-bottom solution'>
+        <h2>Introduce la solución</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mollitia maiores non enim dignissimos dolore, nulla reprehenderit ipsam, ea impedit voluptatem laudantium tempora alias quisquam tempore. Qui quasi minus nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tempore veniam mollitia, commodi nesciunt consequuntur laboriosam hic, ratione tenetur reprehenderit molestias deserunt, eaque iure a atque sequi eum numquam aspernatur?</p>
+        <div>
+            <img src='./assets/img/solution.jpg' alt='Solución' title='Solución'>
+        </div>
+    </div>
+    <div class='container grid grid-3 margin-bottom'>
+        <div>
+            <div class='details-container'>
+                <div>
+                    <i class='fa-regular fa-gem'></i>
+                </div>
+                <h2>Benefit 1</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class='details-container'>
+                <div>
+                    <i class='fa-regular fa-clock'></i>
+                </div>
+                <h2>Benefit 2</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class='details-container'>
+                <div>
+                    <i class='fa-solid fa-users'></i>
+                </div>
+                <h2>Benefit 3</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <!-- TESTIMONIALS -->
+    <div class='container margin-bottom'>
+        <h2 class='text-center'>Testimonials</h2>
+        <div class='grid grid-3'>
+            <div class='card'>
+                <i class='card-background-icon fa-solid fa-quote-left'></i>
+                <div class='card-head'>
+                    <img src='./assets/img/avatar.png' alt='Avatar' title='Avatar'>
+                    <div>
+                        <h3>Juan Perez</h3>
+                        <p>Cliente Ideal</p>
+                    </div>
+                </div>
+                <div class='card-body'>
+                    <h4>
+                        I received a job offer mid-course, and the subjects I learned were current.
+                    </h4>
+                    <p>
+                        'I was an EMT for many years before I joined the bootcamp. I've been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. '
+                    </p>
+                </div>
+                <div class='card-foot'>
+                    <div>
+                        <a href='#'>
+                            <i class='fa-brands fa-facebook'></i>
+                        </a>
+                        <a href='#'>
+                            <i class='fa-brands fa-whatsapp'></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href='#'>
+                            <i class='fa-solid fa-share-nodes'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <i class='card-background-icon fa-solid fa-quote-left'></i>
+                <div class='card-head'>
+                    <img src='./assets/img/avatar.png' alt='Avatar' title='Avatar'>
+                    <div>
+                        <h3>Juan Perez</h3>
+                        <p>Cliente Ideal</p>
+                    </div>
+                </div>
+                <div class='card-body'>
+                    <h4>
+                        I received a job offer mid-course, and the subjects I learned were current.
+                    </h4>
+                    <p>
+                        'I was an EMT for many years before I joined the bootcamp. I've been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. '
+                    </p>
+                </div>
+                <div class='card-foot'>
+                    <div>
+                        <a href='#'>
+                            <i class='fa-brands fa-facebook'></i>
+                        </a>
+                        <a href='#'>
+                            <i class='fa-brands fa-whatsapp'></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href='#'>
+                            <i class='fa-solid fa-share-nodes'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <i class='card-background-icon fa-solid fa-quote-left'></i>
+                <div class='card-head'>
+                    <img src='./assets/img/avatar.png' alt='Avatar' title='Avatar'>
+                    <div>
+                        <h3>Juan Perez</h3>
+                        <p>Cliente Ideal</p>
+                    </div>
+                </div>
+                <div class='card-body'>
+                    <h4>
+                        I received a job offer mid-course, and the subjects I learned were current.
+                    </h4>
+                    <p>
+                        'I was an EMT for many years before I joined the bootcamp. I've been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. '
+                    </p>
+                </div>
+                <div class='card-foot'>
+                    <div>
+                        <a href='#'>
+                            <i class='fa-brands fa-facebook'></i>
+                        </a>
+                        <a href='#'>
+                            <i class='fa-brands fa-whatsapp'></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href='#'>
+                            <i class='fa-solid fa-share-nodes'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CHARACTERISTICS -->
+    <div class='container margin-bottom animated-section'><!-- data-animated='false' -->
+        <h2 class='text-center'>Características</h2>
+        <div class='grid grid-2 characteristics'>
+            <div>
+                <ul>
+                    <li>
+                        <div>
+                            <i class='fa-solid fa-check'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <div>
+                            <i class='fa-solid fa-check'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <div>
+                            <i class='fa-solid fa-check'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <div>
+                            <i class='fa-solid fa-check'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <div>
+                            <i class='fa-solid fa-check'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <div>
+                            <i class='fa-solid fa-check'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <div>
+                            <i class='fa-solid fa-check'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <div>
+                            <i class='fa-solid fa-check'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <div>
+                            <i class='fa-solid fa-check'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <div>
+                            <i class='fa-solid fa-check'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- FREQUENT QUESTIONS -->
+    <div class='container margin-bottom'>
+        <h2 class='text-center'>Preguntas Frecuentes</h2>
+        <div class='accordion'>
+            <div class='accordion-item'>
+                <div class='accordion-heading'>
+                    <div>
+                        Section 1
+                    </div>
+                    <i class='fa-solid fa-chevron-down'></i><!--fa-chevron-up-->
+                </div>
+                <div class='accordion-content'>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quasi saepe animi enim excepturi quo fugiat sit dolore, nostrum cumque iste asperiores inventore autem cum tempore, possimus quia ea eveniet.</p>
+                </div>
+            </div>
+            <div class='accordion-item'>
+                <div class='accordion-heading'>
+                    <div>
+                        Section 1
+                    </div>
+                    <i class='fa-solid fa-chevron-down'></i>
+                </div>
+                <div class='accordion-content'>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quasi saepe animi enim excepturi quo fugiat sit dolore, nostrum cumque iste asperiores inventore autem cum tempore, possimus quia ea eveniet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ACTION -->
+    <div class='container margin-bottom action'>
+        <h2 class='text-center'>Llamado a la acción</h2>
+        <h1>Encabezado para transformar a los usuarios en clientes</h1>
+        <a href='#'>Llamado a la acción especifico</a>
+    </div>
+    <!-- <script src='./assets/js/app.js'></script> -->
+    <script>
+        // ACCORDION
+        const accordions = document.querySelectorAll('.accordion-heading');
+        accordions.forEach(accordion=>{
+            accordion.addEventListener('click',function(e){
+                const icon = accordion.children[1];
+                if(icon.classList.contains('fa-chevron-down')){
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }else{
+                    icon.classList.add('fa-chevron-down');
+                    icon.classList.remove('fa-chevron-up');
+                }
+                accordion.nextElementSibling.classList
+                    .toggle('accordion-active');
+            });
+        });
+        // MENÚ
+        const menu = document.getElementById('menu');
+        let scroll = 0;
+        window.addEventListener('scroll',function(e){
+            scroll = window.scrollY || window.pageYOffset;
+            menu.style.backgroundColor = scroll > 200 ?
+                                '#141515' : 'transparent' ;
+        });
+    </script>
+</body>
+</html>
