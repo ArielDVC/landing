@@ -1,0 +1,33 @@
+.accordion{
+    max-width: 600px;
+    margin   : auto;
+}
+.accordion-item{
+    border-style       : solid;
+    border-width       : 0;
+    border-bottom-width: 1px;
+    border-color       : #fff;
+}
+.accordion-heading{
+    background      : linear-gradient(to right,#831843,#be185d);;
+    color           : #fff;
+    padding         : 16px;
+    cursor          : pointer;
+    display         : flex;
+    justify-content : space-between;
+    font-size       : 20px;
+    font-weight     : 600;
+}
+.accordion-heading::after{
+    font-family: 'Font Awesome 6 Free';
+    content    : '\f078';
+}
+.accordion-item[open] .accordion-heading::after {
+    font-family: 'Font Awesome 6 Free';
+    content    : '\f077';
+}
+.accordion-content{
+    padding         : 10px;
+    text-align      : justify;
+    background-color: #f8f8f8;
+}

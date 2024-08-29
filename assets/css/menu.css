@@ -1,11 +1,10 @@
 /* MENU */
 .menu{
-    width            : 100%;
-    height           : 80px;
-    position         : fixed;
-    z-index          : 2;
-    transition       : background-color 1s ease-in-out;
-    /* background-color : #141515; */
+    width           : 100%;
+    height          : 80px;
+    position        : fixed;
+    z-index         : 2;
+    transition      : background-color 1s ease-in-out;
 }
 .menu-body{
     display: flex;

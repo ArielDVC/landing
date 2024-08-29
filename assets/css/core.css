@@ -8,6 +8,7 @@
     font-family     : Arial, Helvetica, sans-serif;
     list-style      : none;
     text-decoration : none;
+    outline         : none;
     scroll-behavior : smooth; /* Suavizar Scroll */
 }
 .container{
@@ -29,8 +30,8 @@
     grid-template-columns: repeat(2,1fr);
 }
 .animated-section{
-    /* opacity   : 0;
-    transform : translateY(20px); */
+    opacity   : 0;
+    transform : translateY(20px);
     transition: opacity 1s, transform 1s;
 }
 .animated-section.animate{
@@ -61,32 +62,37 @@ p{
     font-size  : 16px;
     line-height: 1.5;
 }
-.accordion{
-    max-width: 600px;
-    margin   : auto;
-}
-.accordion-item{
-    border-style       : solid;
-    border-width       : 0;
-    border-bottom-width: 1px;
-    border-color       : #fff;
-}
-.accordion-heading{
-    background      : linear-gradient(to right,#831843,#be185d);;
-    color           : #fff;
-    padding         : 16px;
-    cursor          : pointer;
-    display         : flex;
-    justify-content : space-between;
+/* BUTTON ACTION */
+#button-action{
+    position        : fixed;
+    z-index         : 3;
+    bottom          : 20px;
+    right           : 20px;
+    border-style    : solid;
+    border-width    : 1px;
+    border-color    : #ec4899;
+    border-radius   : 100%;
+    color           : white;
+    padding         : 16px 17px;
     font-size       : 20px;
-    font-weight     : 600;
+    cursor          : pointer;
+    background-color: #be185d;
+    transition      : background-color .5s ease-in-out;
+    /* display         : none; */
+    transition      : opacity 0.5s ease-in-out;
+    opacity         : 0;
+    visibility      : hidden;
 }
-.accordion-content{
-    padding: 10px;
-    display: none;
+#button-action:hover{
+    background-color: #ec4899;
 }
-.accordion-active{
-    display: block;
+#button-action.show{
+    opacity   : 1;
+    visibility: visible;
+}
+#button-action.hide{
+    opacity   : 0;
+    /* visibility: hidden; */
 }
 /* 93.75% */
 @media (min-width: 640px){

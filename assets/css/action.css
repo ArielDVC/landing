@@ -13,3 +13,6 @@
     margin-top     : 10px;
     width          : 275px;
 }
+.action a:hover{
+    background: linear-gradient(to right,#be185d,#ec4899);
+}
